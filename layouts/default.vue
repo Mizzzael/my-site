@@ -1,5 +1,5 @@
 <template>
-  <main id="app">
-    <Nuxt />
-  </main>
+    <main id="app">
+        <Nuxt />
+    </main>
 </template>

@@ -7,23 +7,23 @@ module.exports = {
     theme: {
         extend: {},
         fontFamily: {
-            'sans': defaultFont,
-            'mono': defaultFont,
-            'display': defaultFont,
-            'body': defaultFont,
+            sans: defaultFont,
+            mono: defaultFont,
+            display: defaultFont,
+            body: defaultFont,
         },
         colors: {
             transaparent: 'transparent',
             black: color.black,
             white: color.white,
             custom: {
-                1: "#FFFAF2",
-                2: "#F5D6AB",
-                3: "#C66C49",
-                4: "#8B4136",
-                5: "#333333"
-            }
-        }
+                1: '#FFFAF2',
+                2: '#F5D6AB',
+                3: '#C66C49',
+                4: '#8B4136',
+                5: '#33333',
+            },
+        },
     },
     variants: {
         extend: {},

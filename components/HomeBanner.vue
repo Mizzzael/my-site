@@ -22,9 +22,7 @@
 <script>
 export default {
     name: 'HomeBanner',
-    mounted() {
-        console.log('Work')
-    },
+    mounted() {},
 }
 </script>
 <style scoped>
@@ -36,6 +34,12 @@ export default {
 
 .header\.backdrop {
     background-color: rgba(198, 108, 73, 0.4);
+}
+
+@media only screen and (min-width: 1536px) {
+    .header {
+        background-image: url('~/assets/images/vincentiu-solomon-Z4wF0h47fy8-unsplash.jpg');
+    }
 }
 
 @media only screen and (min-width: 1536px) {
