@@ -52,7 +52,7 @@ jobs:
         run: yarn run generate
 
       - name: Deploy
-        uses: my-site/actions-gh-pages@v3
+        uses: Mizzzael/my-site@v3
         with:
           github_token: ${{ secrets.MEUSITE }}
           publish_dir: ./dist
