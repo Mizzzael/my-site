@@ -7,10 +7,14 @@
                 </section>
                 <section class="flex flex-wrap items-center full-height">
                     <div class="w-full">
-                        <h2 class="xl:text-5xl font-light text-custom-1">
+                        <h2
+                            class="header.title xl:text-5xl font-light text-custom-1"
+                        >
                             Olá, este é o meu site pessoal!
                         </h2>
-                        <p class="xl:text-xl font-light text-custom-1 my-4">
+                        <p
+                            class="header.subtitle xl:text-xl font-light text-custom-1 my-4"
+                        >
                             Desenvolvedor de Guarulhos, São Paulo
                         </p>
                     </div>
@@ -20,14 +24,34 @@
     </header>
 </template>
 <script>
+import anime from 'animejs'
 export default {
     name: 'HomeBanner',
-    mounted() {},
+    mounted() {
+        this.initAnimationOnLetter()
+    },
+    methods: {
+        initAnimationOnLetter() {
+            const title = document.querySelector('.header\\.title')
+            title.innerHTML = title.textContent.replace(
+                /\S/g,
+                '<span class="letter inline-block">$&</span>'
+            )
+
+            anime.timeline({ loop: false }).add({
+                targets: '.header\\.title .letter',
+                scale: [0, 1],
+                duration: 1500,
+                elasticity: 600,
+                delay: (el, i) => 45 * (i + 1),
+            })
+        },
+    },
 }
 </script>
 <style scoped>
 .header {
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
