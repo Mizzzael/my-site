@@ -56,6 +56,10 @@ export default {
     background-position: center center;
 }
 
+.header\.title {
+    letter-spacing: 2px;
+}
+
 .header\.backdrop {
     background-color: rgba(198, 108, 73, 0.4);
 }
