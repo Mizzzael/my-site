@@ -49,7 +49,7 @@ jobs:
         run: yarn lint
 
       - name: Generate
-        run: yarn run generate
+        run: yarn build
 
       - name: Deploy
         uses: Mizzzael/my-site@master
