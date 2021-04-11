@@ -1,3 +1,33 @@
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+    cursor: pointer;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #FFFAF2;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8B4136;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 220ms background;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F5D6AB;
+  }
+
 .full-height {
     height: 100vh;
+}
+
+.min-full-height {
+    min-height: 100vh;
+}
+
+.min-middle-height {
+    min-height: 50vh;
 }

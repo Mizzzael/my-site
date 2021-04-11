@@ -37,6 +37,22 @@ export default {
                 href:
                     'https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap',
             },
+            {
+                rel: 'stylesheet',
+                href:
+                    '//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css',
+            },
+        ],
+        script: [
+            {
+                src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+                type: 'text/javascript',
+            },
+            {
+                src:
+                    '//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js',
+                type: 'text/javascript',
+            },
         ],
     },
 
@@ -69,11 +85,7 @@ export default {
     axios: {},
 
     // Content module configuration: https://go.nuxtjs.dev/config-content
-    content: {
-        apiPrefix: '_content',
-        dir: 'content',
-        fullTextSearchFields: ['title', 'decription', 'slug', 'text'],
-    },
+    content: {},
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},

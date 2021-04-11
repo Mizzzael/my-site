@@ -15,8 +15,18 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/axios": "^5.13.1",
     "animejs": "^3.2.1",
+    "compress-images": "^1.9.9",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "gifsicle": "^5.2.0",
+    "imagesloaded": "^4.1.4",
+    "jquery": "^3.6.0",
+    "lottie-web": "^5.7.8",
+    "mime-types": "^2.1.30",
+    "nuxt": "^2.15.3",
+    "path": "^0.12.7",
+    "pngquant-bin": "^6.0.0",
+    "slick-carousel": "^1.8.1",
+    "svgo": "^2.3.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",

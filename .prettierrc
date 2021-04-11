@@ -2,5 +2,6 @@
   "semi": false,
   "singleQuote": true,
   "tab-width": 4,
-  "use-tabs": false
+  "use-tabs": false,
+  "proseWrap": "never"
 }
